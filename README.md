@@ -11,11 +11,11 @@ Setup
 ~~~groovy
 buildscript {
     repositories {
-        maven { url 'https://raw.github.com/xujiaao/mvn-repository/master/releases' }
+        maven { url 'https://raw.github.com/hyperconnect/AARLinkSources/repository' }
     }
 
     dependencies {
-        classpath 'com.github.xujiaao:aarLinkSources:1.0.0'
+        classpath 'com.github.xujiaao:aarLinkSources:1.0.1'
     }
 }
 ~~~
