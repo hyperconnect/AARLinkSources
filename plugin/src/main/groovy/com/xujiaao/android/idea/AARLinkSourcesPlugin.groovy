@@ -32,7 +32,7 @@ class AARLinkSourcesPlugin implements Plugin<Project> {
             final AARLinkSourcesTask aarLinkSourcesTask = project.rootProject.tasks.create('aarLinkSources', AARLinkSourcesTask)
 
             project.rootProject.gradle.projectsEvaluated {
-                def artifacts = getProjectDependencies(project).findAll { it.type.equals("aar") }
+                def artifacts = getProjectDependencies(project).findAll { it.type.equals("aar") || it.type.equals("jar") }
                         .unique()
 
                 def identifiers = artifacts.collect {
